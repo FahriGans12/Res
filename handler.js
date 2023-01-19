@@ -7,6 +7,8 @@ import chalk from 'chalk'
 import fs from 'fs'
 import fetch from 'node-fetch'
 
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
+
 /**
  * @type {import('@adiwajshing/baileys')}
  */
