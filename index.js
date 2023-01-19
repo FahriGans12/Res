@@ -1,5 +1,7 @@
 console.log('🐾 Starting...')
 
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
+
 import yargs from 'yargs'
 import cfonts from 'cfonts'
 import { fileURLToPath } from 'url'
