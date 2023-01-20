@@ -19,8 +19,6 @@ const { name, author } = require(join(__dirname, './package.json')) // https://w
 say('Lightweight\nWhatsApp Bot', { font: 'chrome', align: 'center', gradient: ['red', 'magenta'] })
 say(`'${name}' By @${author.name || author}`, { font: 'console', align: 'center', gradient: ['red', 'magenta'] })
 
-require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
-
 var isRunning = false
 /**
  * Start a js file
